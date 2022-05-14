@@ -1,0 +1,299 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&family=Tajawal:wght@300;400&display=swap');
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    font-size: 19px;
+}
+
+body{
+    background-color: #541579;
+font-family: "Tajawal", sans-serif;
+    
+}
+main{
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+nav{
+    display:  flex;
+    justify-content: space-around;
+    align-items:  center;
+    height: 18vh;
+    background-color: rgb(196, 186, 194);
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 0 5rem;
+}
+
+nav.i {
+    display: none;
+    color: #cf4cb3;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+
+nav .logo {
+    font-size: 20rem;
+    color:rgb(148, 19, 94)
+    
+  
+}
+
+
+nav.bars-menu{
+    display: none;
+
+}
+
+
+
+nav .nav-items {
+    list-style-type: none;
+    display: flex;
+}
+
+ nav.nav-items .nav-items {
+    padding-left: 0rem;
+    text-decoration: none;
+}
+
+nav.nav-link{
+    
+    text-decoration: none;
+    color: #cf4cb3;
+    font-size: 1.4rem;
+}
+
+.nav-items.nav-link:hover{
+    color: rgb(14, 85, 85);
+}
+
+.cta{
+    font-family: Lalezar;
+    padding: 0.55rem 2rem;
+    border: none;
+    color: rgb(9, 2, 10);
+    border-radius: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.cta.dark{
+    background-color: rgb(152, 63, 155);
+    transition: background-color=0.3s;
+}
+
+
+.cta.dark:hover{
+    background-color: rgb(102, 89, 102);
+}
+
+.cta.purple{
+    background-color: #9c20a0;
+    margin-left: 1rem;
+    transition: background-color 0.3s;
+
+}
+
+.cta.purple:hover{
+    background: color #5f5f5f;
+
+}
+
+.hero{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1{
+    font-size: 3rem;
+    width: 50%;
+    text-align: center;
+    color: #fff;
+    font-weight: 100;
+    margin-bottom: 2rem;
+}
+
+.hero h1 span{
+    color: #cf4cb3;
+}
+
+.features{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.features h3{
+    color: aliceblue;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.features h6{
+    color: #cf4cb3;
+    font-size: 1rem;
+    margin-bottom: 3rem;
+}
+
+.feature{
+    background-color: rgb(189, 91, 164);
+    display: flex;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-bottom: 3rem;
+    box-shadow: 10px 10px 10px rgb(152, 63, 155);
+}
+
+.feature.content {
+    padding: 4rem;
+    flex: 1;
+}
+
+.feature.content h2 {
+    color: aliceblue;
+    margin-bottom: 2rem;
+}
+
+.feature.content p {
+    color: azure;
+    font-size: 1.1rem;
+    width: 40%;
+    line-height: 2;
+}
+
+.feature img {
+    flex: 1;
+    max-width: 30%;
+
+}
+footer{
+    background-color: #fff;
+    min-height: 25%;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 1400px) {
+	
+  main {
+    max-width: 1024px;
+  }	
+}
+	
+@media screen and (max-width: 1050px) {
+	
+  main {
+
+    max-width: 768px;
+	
+  }
+	
+  .features-list img {
+    display: none;	
+  }
+	
+  .details-list {
+	
+    grid-template-columns: 1fr 1fr;
+	
+  }
+	
+}
+	
+@media screen and (max-width: 800px) {
+	
+  main {
+	
+    max-width: 600px;	
+  }
+	
+  .details-list {
+	
+    grid-template-columns: 1fr;
+	
+  }
+	
+  html {
+	
+    font-size: 90%;	
+  }
+	
+}
+	
+@media screen and (max-width: 600px) {
+	
+  main {
+	
+    margin: 2rem;
+	
+    text-align: center;	
+  }
+  .feature .content p {
+    width: 100%
+	
+  }
+  .hero {
+    margin: 5rem 0;	
+  }	
+  .hero h1 {	
+    width: 80%;	
+  }	
+  nav i{	
+    display: block;	
+  }	
+  nav .nav-items {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    left: 0;
+    top: 5vh;
+    width: 100%;
+    height: 50%;
+    background-color: var(--dark-purple);	
+  }	
+  nav .nav-items.active {	
+    display: flex;
+	
+  }
+  nav .nav-items .nav-item {
+	
+    padding: 2rem 0;
+	
+    font-size: 1.4rem;
+	
+  }
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
